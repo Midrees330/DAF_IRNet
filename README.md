@@ -18,7 +18,7 @@ The corresponding pretrained models:
 # Test the model
 You can directly test the performance of the pre-trained model as follows:
 Modify the paths to dataset and pre-trained model. You need to modify the following path in the `test.py` or run
-- python test.py --load [checkpoint numbers, e.g 690]
+- python test.py --load [checkpoint number, e.g 690]
 # Train
 1. Download datasets and set the following structure
 
@@ -61,3 +61,5 @@ Modify the paths to dataset and pre-trained model. You need to modify the follow
        |-- test
            |-- test_A  # rain image
            |-- test_B  # rain-free GT
+# Evaluation
+The results reported in the paper are calculated by the `matlab` script used in [previouse method](https://github.com/hhqweasd/G2R-ShadowNet/blob/main/evaluate.m)
