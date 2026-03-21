@@ -14,4 +14,4 @@ If you use this code or models in your research, please cite the corresponding m
 - rain100L [link](https://drive.google.com/file/d/1f-Se88bwPE0rHCEnBpDRnuggoNg3mB1S/view?usp=drive_link)
 # Pretrained models
 The corresponding pretrained models:
-- All-in-One and Individual Tasks [checkpoints](https://drive.google.com/file/d/1nWXJe-jwlU5xP1jd2oKGoZItTEu2WdYj/view?usp=drive_link)
+- All-in-One and Individual Task [checkpoints](https://drive.google.com/file/d/1nWXJe-jwlU5xP1jd2oKGoZItTEu2WdYj/view?usp=drive_link)
