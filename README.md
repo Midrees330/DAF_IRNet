@@ -15,3 +15,49 @@ If you use this code or models in your research, please cite the corresponding m
 # Pretrained models
 The corresponding pretrained models:
 - All-in-One and Individual Task [checkpoints](https://drive.google.com/file/d/1nWXJe-jwlU5xP1jd2oKGoZItTEu2WdYj/view?usp=drive_link)
+# Test the model
+You can directly test the performance of the pre-trained model as follows:
+Modify the paths to dataset and pre-trained model. You need to modify the following path in the `test.py` or run
+- python test.py --load [checkpoint numbers, e.g 690]
+# Train
+1. Download datasets and set the following structure
+
+    ```
+    -- AISTD_Dataset
+       |-- train
+       |   |-- train_A  # shadow image
+       |   |-- train_B  # shadow mask (no use)
+       |   |-- train_C  # shadow-free GT
+       |
+       |-- test
+           |-- test_A  # shadow image
+           |-- test_B  # shadow mask (no use)
+           |-- test_C  # shadow-free GT
+
+    -- LoL_Dataset
+       |-- train
+       |   |-- train_A  # low-light image
+       |   |-- train_B  # low-light-free GT
+       |
+       |-- test
+           |-- test_A  # low-light image
+           |-- test_B  # low-light-free GT
+
+    -- BSD_Dataset
+       |-- BSDdataset
+       |   |-- train  # denoise image
+       |
+       |-- test (BSD68)
+           |-- noisy15  # noisy image
+           |-- noisy25  # noisy image
+           |-- noisy50  # noisy image
+           |-- original  # clean image
+
+    -- RAIN_Dataset
+       |-- train
+       |   |-- train_A  # rain image
+       |   |-- train_B  # rain-free GT
+       |
+       |-- test
+           |-- test_A  # rain image
+           |-- test_B  # rain-free GT
