@@ -1,31 +1,3 @@
-"""
-MTAA Feature Disentanglement t-SNE Visualization for DAF-IRNet
-===============================================================
-Addresses the editor's request:
-  "Prove feature disentanglement via t-SNE visualization showing
-   that the Degraded Pathway and Clean Pathway features are
-   separated in the feature space."
-
-For each image, TWO feature vectors are extracted from the
-FIRST encoder LT block MTAA:
-  - f_deg = x_tilde * M_tau      (degradation-specific features)
-  - f_cln = x_tilde * (1-M_tau)  (content-preserving features)
-
-t-SNE is run on the combined set of f_deg and f_cln vectors.
-If MTAA achieves disentanglement, these two clouds must form
-SEPARATE clusters in the 2D embedding — regardless of task.
-
-Produces:
-  tsne_disentanglement_per_task.png
-     — 4 subplots (one per task), each showing f_deg vs f_cln
-
-Silhouette score between the two pathway clusters is also
-reported as a quantitative disentanglement metric.
-
-Usage:
-    python tsne_disentanglement.py --load 50
-"""
-
 import os, sys, platform, random
 import torch, torch.nn.functional as F
 import argparse, numpy as np
