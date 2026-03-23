@@ -1,5 +1,8 @@
 # DAF_IRNet
 Degradation-Aware Feature Learning Former for All-in-One Image Restoration:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19186882.svg)](https://doi.org/10.5281/zenodo.19186882)
+
 - This code is directly related to the manuscript submitted to The TCSVT: IEEE Transactions on Circuits and Systems for Video Technology: `Degradation-Aware Feature Learning Former for All-in-One Image Restoration.' 
 If you use this code or models in your research, please cite the corresponding manuscript.
 # Requirement
