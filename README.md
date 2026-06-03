@@ -1,5 +1,5 @@
 # DAF_IRNet
-Degradation-Aware Feature Disentanglement for All-in-One Image Restoration:
+Degradation-Aware Feature Disentanglement for Task-Conditioned All-in-One Image Restoration:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19186882.svg)](https://doi.org/10.5281/zenodo.19186882)
 
